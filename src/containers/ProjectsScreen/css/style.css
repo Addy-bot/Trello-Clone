@@ -1,0 +1,33 @@
+.main {
+    font-family: sans-serif;
+}
+
+.pageTitle {
+    text-align: center;
+}
+
+.pageDescription {
+    text-align: justify;
+    color: grey;
+}
+
+#column {
+    padding: 4px;
+    width: 250px;
+    min-height: 500px;
+}
+
+.cardTitle {
+    text-align: center;
+}
+
+.cardBody {
+    color: lightgray;
+    text-align: center;
+}
+
+.cardFooter {
+    color: cadetblue;
+    font-size: 13px;
+    text-align: right;
+}
