@@ -2,8 +2,7 @@
 
 ## Hosted Link
 
--[https://64296829955a576d9e7a71b4--exquisite-taffy-9ce9b2.netlify.app/](https://64296829955a576d9e7a71b4--exquisite-taffy-9ce9b2.netlify.app/)
-
+-[https://vocal-pothos-68b6fa.netlify.app/](https://vocal-pothos-68b6fa.netlify.app/)
 
 ### `How to run locally`
 
