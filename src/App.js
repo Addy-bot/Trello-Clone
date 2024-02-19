@@ -6,10 +6,11 @@ import Register from "./containers/Register";
 import Dashboard from "./containers/Dashboard";
 import ProjectsScreen from "./containers/ProjectsScreen";
 import Nav from "./components/NavBar";
+import "./styles.css";
 
 function App() {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid backGroundImg">
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />

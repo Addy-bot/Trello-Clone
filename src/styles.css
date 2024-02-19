@@ -1,0 +1,6 @@
+.backGroundImg {
+    background-image: url('./images/Projects/background.png');
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}

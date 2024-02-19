@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom';
 import './css/style.css';
-import { isEmpty } from 'lodash';
+import isEmpty from 'lodash/isEmpty';
 
 const Login = () => {
     const [email, setEmail] = useState();
@@ -44,7 +44,7 @@ const Login = () => {
                     <input className="form-control" type="password" id="pwd" name="pwd" onChange={(e) => setPassword(e.target.value)} />
                 </div>
                 <div className="d-grid gap-2 col-2 mx-auto">
-                    <input type="submit" data-cy="submit" className="btn btn-outline-dark" value="Submit" onClick={() => onSubmitHandler()} disabled={isDisabled} />
+                    <input type="submit" data-cy="submit" className="btn btn-dark" value="Login" onClick={() => onSubmitHandler()} disabled={isDisabled} />
                 </div>
             </form>
         </div>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import { useNavigate, useLocation } from 'react-router-dom';
-import { isEmpty } from 'lodash';
+import isEmpty from 'lodash/isEmpty';
 import Popup from "../../components/Popup";
 import { taskStatus } from "../../utils/MockData/Tasks";
 import { onDragEnd } from "./Functions";

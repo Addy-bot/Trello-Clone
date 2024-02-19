@@ -1,4 +1,4 @@
-import { isEmpty } from 'lodash';
+import isEmpty from 'lodash/isEmpty';
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { minEightOneNumOneLetter, validEmail } from '../../utils/commonFunctions';
@@ -59,12 +59,12 @@ const Register = () => {
                 <div className="mb-3">
                     <label className="form-label" htmlFor="password">Password:</label>
                     <input className="form-control" type="password" id="pwd" name="pwd" onChange={(e) => setPassword(e.target.value)} />
-                    {passFieldError && <div style={{ color: 'lightsalmon' }} >
+                    {passFieldError && <div style={{ color: 'red' }} >
                         Please Enter in Correct Format: Minimum 8 characters, at least 1 letter and 1 number!
                     </div>}
                 </div>
                 <div className="d-grid gap-2 col-2 mx-auto">
-                    <input className="btn btn-outline-dark" type="submit" value="Submit" onClick={() => onSubmitHandler()} disabled={isDisabled} />
+                    <input className="btn btn-dark" type="submit" value="Register" onClick={() => onSubmitHandler()} disabled={isDisabled} />
                 </div>
             </form>
         </div>

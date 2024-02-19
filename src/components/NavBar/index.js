@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { isEmpty } from 'lodash';
+import isEmpty from 'lodash/isEmpty';
 import './css/style.css';
 
 const Nav = () => {

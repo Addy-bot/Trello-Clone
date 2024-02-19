@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { isEmpty } from 'lodash'
+import isEmpty from 'lodash/isEmpty';
 import { useNavigate } from 'react-router-dom'
 import { Projects } from '../../utils/MockData/ProjectsDummyJSON'
 import ReactPaginate from 'react-paginate';
@@ -8,11 +8,14 @@ import Items from './Items'
 
 const Dashboard = ({ itemsPerPage = 3 }) => {
     const [itemOffset, setItemOffset] = useState(0);
+    const [showPage, setShowPage] = useState(false);
     const navigateTo = useNavigate();
 
     useEffect(() => {
         if (isEmpty(localStorage.getItem('userData'))) {
             navigateTo('/');
+        } else {
+            setShowPage(true);
         }
     }, [])
 
@@ -31,7 +34,7 @@ const Dashboard = ({ itemsPerPage = 3 }) => {
 
     return (
         <div>
-            <>
+            {showPage && <>
                 <Items currentItems={currentItems} />
                 <ReactPaginate
                     activeClassName={"active"}
@@ -50,7 +53,7 @@ const Dashboard = ({ itemsPerPage = 3 }) => {
                     renderOnZeroPageCount={null}
 
                 />
-            </>
+            </>}
         </div>
     )
 }
