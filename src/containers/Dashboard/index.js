@@ -17,6 +17,7 @@ const Dashboard = ({ itemsPerPage = 3 }) => {
         } else {
             setShowPage(true);
         }
+        // eslint-disable-next-line
     }, [])
 
     // Simulate fetching items from another resources.
